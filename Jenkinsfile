@@ -5,7 +5,7 @@ pipeline{
         stage("sonar quality test"){
              agent{
                   docker {
-		              sudo image 'maven'
+		              image 'maven'
 		          }
              }
             steps{

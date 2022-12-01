@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("sonar quality test"){
              agent{
-                  docker {
+                  sudu docker {
 		              image 'maven'
 		          }
              }
